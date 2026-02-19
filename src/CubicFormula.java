@@ -30,7 +30,10 @@ public class CubicFormula {
         if (-(b) == 3*a) {
             System.out.println("There is a triple root at " + -(b/(3*a)));
         } else {
-            double root1 = (9*a*d - b*c) / (a * (b*b - 3*a*c));
+            double doubleRoot = (9*a*d - b*c) / (a * (b*b - 3*a*c));
+            double simpleRoot = (4*a*b*c - 9*a*a*d - b*b*b) / a * (b*b - 3*a*c);
+            System.out.println(doubleRoot);
+            System.out.println(simpleRoot);
         }
     }
 }
